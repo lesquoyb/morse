@@ -7,7 +7,7 @@ import sys
 
 def read(char):
     for c in char:
-        music="longBeep.wav" if (c=="-")  else "shortBeep.wav"
+        music="sounds/longBeep.wav" if (c=="-")  else "sounds/shortBeep.wav"
         sound = pyglet.resource.media(music)
         sound.play()
         time.sleep(0.6)
